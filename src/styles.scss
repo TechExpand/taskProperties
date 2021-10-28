@@ -1,1 +1,194 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css');
+
+.content{
+    background: #fff;
+    max-width: 960px;
+    margin: 30px auto;
+    padding:  20px 30px;
+    border-radius: 4px;
+    box-shadow: 14px 13px 29px rgb(0 0 0 / 5%);
+}
+
+a.brand-logo {
+    padding-left: 30px;
+}
+a.dropdown-trigger.btn.right {
+    margin: 15px;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+#workorder-list li{
+    padding: 20px;
+    /* background: #f6f6f6; */
+    font-size: 20px;
+    color: #555;
+    position: relative;
+    /* border-bottom: 1px solid #e6e6e6; */
+    height: 46px;
+}
+
+#workorder-list .generate li:nth-child(even){
+    padding: 20px;
+    /* background: #f2f2f2; */
+}
+
+li span{
+    display: block;
+}
+
+li span:nth-child(2){
+    font-size: 16px;
+    margin-top: 6px;
+    color: #999;
+}
+
+li div{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    background: rgba(255,255,255,0.6);
+    width: 40px;
+    text-align: center;
+    padding: 10px 0;
+    font-weight:  bold;
+    cursor:  pointer;
+}
+li.collection-item.card {
+    height: 70x;
+}
+i.cross {
+    float: right;
+    line-height: 0px;
+    cursor: pointer;
+    color: #d37070;
+    margin-top: 10px;
+}
+
+
+/* workorder list style  */
+span.propertypicker {
+    font-size: 15px;
+    display: block;
+    padding-right: 20px;
+}
+span.title { 
+    font-size: 14px;
+    padding-left: 20px;
+
+}
+span.price { 
+    font-size: 14px;
+    padding-left: 20px;
+color: rgb(10, 99, 54);
+}
+span.date {
+    font-size: 16px;
+    display: block;
+    float: right;
+    padding-right: 20px;
+}
+span.desc {
+    /* display: none; */
+    padding-left: 30px;
+}
+
+
+li span {
+    float: left;
+}
+.dropdown-content li>span {
+ padding: none !important ; 
+}
+
+li span:nth-child(2) {
+    font-size: 15px;
+    margin-top: 0px;
+    color: #000;
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: transparent;
+    border-radius: 5px;
+    width: 70%;
+    position: relative;
+    transition: all 5s ease-in-out;
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup .close:hover {
+    color: #06D85F;
+  }
+  .popup .content {
+    max-height: 70%;
+    overflow: auto;
+  }
+  
+  @media screen and (max-width: 700px){
+    .box{
+      width: 70%;
+    }
+    .popup{
+      width: 70%;
+    }
+  }
+
+  .row .col.s5{
+    width: 206px !important;
+}
+
+#optionwidth{
+    width: 100px !important ;
+}
+
+#tableStyle{
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+mat-dialog-container {
+  background: white !important;
+  color: black;
+}
+
+.mat-dialog-container{
+  color: black !important;
+}

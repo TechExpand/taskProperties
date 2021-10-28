@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "4ffab9fb-0832-401d-a0f0-9ec7cc62638a"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -31,22 +34,27 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "./node_modules/@angular/material/prebuilt-themes/purple-green.css",
+             
+              "src/styles.scss",
+              "node_modules/sweetalert2/src/sweetalert2.scss"
             ],
-            "scripts": []
+            "scripts": [
+              
+            ]
           },
           "configurations": {
             "production": {
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "1.3mb",
+                  "maximumError": "1.5mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "1.3mb",
+                  "maximumError": "1.5mb"
                 }
               ],
               "fileReplacements": [
@@ -99,6 +107,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/purple-green.css",
               "src/styles.scss"
             ],
             "scripts": []

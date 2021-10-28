@@ -2,12 +2,53 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>TaskManager</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link type="text/css" rel="stylesheet" href="./assets/materialize.min.css" media="screen,projection" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/functions/css/style.css">
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+  <title>VMG</title>
+
+
+  <script>
+    // Your web app's Firebase configuration
+    var config = {
+        apiKey: "AIzaSyAvaveuPqyDoI1ud14OWKcmACt8R7mKfXA",
+        authDomain: "vmg-html.firebaseapp.com",
+        projectId: "vmg-html",
+        storageBucket: "vmg-html.appspot.com",
+        messagingSenderId: "556127336105",
+        appId: "1:556127336105:web:3911f5d3c2ffd039e1dbb8"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(config);
+    const db = firebase.firestore()
+    db.settings({ timstampsInSnapshots: true, merge: true });
+</script>
+<script>M.AutoInit();</script>
+<script src="./assets/main.js"></script>
+<script src="./assets/listAll.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
+<body class="mat-typography">
   <app-root></app-root>
 </body>
 </html>

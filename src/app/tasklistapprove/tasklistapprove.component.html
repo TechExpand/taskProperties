@@ -1,0 +1,35 @@
+<table>
+    <thead>
+      <th>Title</th>
+      <th>Property</th>
+      <th>Description</th>
+      <th>Price($)</th>
+      <th>Date</th>
+      <th>Status</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let policy of tasks" id="tableStyle">
+  
+        <td>{{policy.data.title}}</td>
+        <td>{{policy.data.property}}</td>
+        <td>{{policy.data.desc}}</td>
+        <td class="priceColor">{{policy.data.price}}</td>
+        <td>{{policy.data.date}}</td>
+        <td>{{policy.data.mode=='false'?'PENDING':policy.data.mode=='decline'?'DECLINED':'APPROVED'}}</td>
+        <td>
+            <!-- <i (click)="delete(policy.id)" class="material-icons cross">delete_forever</i> -->
+            
+        </td>
+        <div *ngIf="policy.data.mode=='false'">
+            <button (click)="update({mode: 'true'},policy.id)" class='dropdown-trigger btn marginTop'>Approve Task</button>
+            <button (click)="update({mode: 'decline'},policy.id)" class='dropdown-trigger btn marginTop' id="color">Decline Task</button>
+        </div>
+        <div *ngIf="policy.data.mode=='true'">
+            <i  class="material-icons done">done_all</i>
+        </div>
+        <div *ngIf="policy.data.mode=='decline'">
+            <i  class="material-icons decline">close</i>
+        </div>
+      </tr>
+    </tbody>
+  </table>

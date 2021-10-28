@@ -1,0 +1,159 @@
+
+
+    <!-- // navigation bar -->
+
+    <nav>
+        <div class="nav-wrapper blue-grey darken-1 z-depth-2">
+            <a href="#!" class="brand-logo"><i class="material-icons">cloud</i></a>
+            <!-- <ul class="right hide-on-med-and-down">
+                <li><a href="#"><i class="material-icons">search</i></a></li>
+                <li><a href="#"><i class="material-icons">view_module</i></a></li>
+                <li><a href="#"><i class="material-icons">refresh</i></a></li>
+                <li><a href="#S"><i class="material-icons">more_vert</i></a></li>
+            </ul> -->
+             <!-- Dropdown Trigger -->
+   
+        </div>
+    </nav>
+
+
+    <!-- // main container -->
+    <div class="container">
+
+
+        <!-- list output -->
+
+        <h2>Current Workorders</h2>
+        <p>All Properties</p>
+        <br><br><br>
+<app-tasklist>
+
+</app-tasklist>
+
+
+
+
+        <!-- <div class="collection">
+            <ul class="" id="workorder-list">
+              <li class="collection-item generate" data-id="ZYfmvAIIcc2Ql3Lt4K1x" id="link"><i class="material-icons cross">delete_forever</i><span class="propertypicker">Rancho Del Sol</span><span class="price">340</span><span class="title generate">lights </span><span class="desc hide-on-med-and-down">test description</span><span class="date">Aug 02, 2021</span></li>
+              <li class="collection-item generate" data-id="ZYfmvAIIcc2Ql3Lt4K1x" id="link"><i class="material-icons cross">delete_forever</i><span class="propertypicker">Rancho Del Sol</span><span class="price">340</span><span class="title generate">lights </span><span class="desc hide-on-med-and-down">test description</span><span class="date">Aug 02, 2021</span></li>
+            </ul>
+        </div> -->
+
+        <!-- Modal Trigger -->
+        <a  (click)="openDialog()" class="waves-effect waves-light btn modal-trigger "><i class="material-icons">add</i> ADD TASK</a>
+
+
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <!-- <div class="container">
+                    <h4>New WorkOrder Form</h4><br><br>
+                    <form id="add-workorder" action="">
+                        <div class="row ">
+                            <div class="input-field col s4 propertyName" id="propertyName">
+                                <select required class="validate">
+                                    <option value="" disabled selected>Choose Property</option>
+                                    <option value="1">Bear House</option>
+                                    <option value="2">Turtle House</option>
+                                    <option value="3">Road Runner</option>
+                                    <option value="4">Rancho Del Sol</option>
+                                    <option value="5">Casa Alegre</option>
+                                    <option value="6">Bella Vista</option>
+                                </select>
+                                <label>Property Select</label>
+                            </div>
+
+                            <div class="input-field col s6">
+                                <input id="" name="title" type="text" placeholder="job title" required>
+                                <label for="">Job Title</label>
+                            </div>
+
+                            <div class="input-field col s2">
+                                <input type="text" name="price" placeholder="price" required>
+                                <label for="">Amount</label>
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            <div class="input-field col s9">
+                                <input type="text" name="desc" placeholder="desc" required>
+                            </div>
+                            <div class="input-field col s3">
+                                <input id="pickem" type="text" name="date" class="datepicker" placeholder="date"
+                                    required>
+                            </div>
+                        </div>
+                        <br><br>
+
+                        <button class="btn submit-btn waves-effect waves-light">
+                            <i class="material-icons left">add_box</i> Add New Workorder
+                        </button>
+                    </form>
+
+                </div> -->
+            </div>
+
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat"><i
+                        class="material-icons left">close</i> </a>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+        
+
+        <!-- <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Property</a> -->
+
+        <!-- Dropdown Structure -->
+        <ul id='dropdown1' class='dropdown-content'>
+            <li><a href="bh.html"><i class="material-icons">house</i>Bear House</a></li>
+            <li><a href="#!"><i class="material-icons">house</i>Turtle House</a></li>
+            <!-- <li class="divider" tabindex="-1"></li> -->
+            <li><a href="#!"><i class="material-icons">house</i>Road Runner</a></li>
+            <li><a href="#!"><i class="material-icons">house</i>Bella Vista</a></li>
+            <li><a href="#!"><i class="material-icons">house</i>Casa Alegre</a></li>
+            <li><a href="#!"><i class="material-icons">house</i>Rancho Del Sol</a></li>
+            <li><a href="#!"><i class="material-icons">house</i>Lobo House</a></li>
+        </ul>
+    </div><br><br>
+    <footer class="page-footer  blue-grey darken-4">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Footer Content</h5>
+                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer
+                        content.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2021 Wingu Action
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+    </footer>
+    <!-- /// scripts -->
+  
+
+
